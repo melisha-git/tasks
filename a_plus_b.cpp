@@ -22,10 +22,7 @@ int main() {
 	if (!ofs.is_open() || !ifs.is_open())
 		return displayError("Error files");
 	int a, b;
-	std::string str;
-	std::getline(ifs, str);
-	a = std::stoi(str);
-	b = std::stoi(str.erase(0, str.find(' ') + 1));
+	ifs >> a >> b;
 	ofs << a + b;
 	ifs.close();
 	ofs.close();
