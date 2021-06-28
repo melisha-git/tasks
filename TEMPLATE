@@ -1,0 +1,11 @@
+#include <iostream>
+#include <fstream>
+
+int main() {
+	std::ifstream ifs("INPUT.TXT");
+	std::ofstream ofs("OUTPUT.TXT");
+
+	ifs.close();
+	ofs.close();
+	return 0;
+}
